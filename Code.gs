@@ -107,6 +107,7 @@ function templateIt()
 {
 
 var tok0 = SpreadsheetApp.getActiveSheet().getRange("B7").getDisplayValue();
+var tok00 = SpreadsheetApp.getActiveSheet().getRange("C7").getDisplayValue();
 if(tok0=="-")
 {
 SpreadsheetApp.getActiveSheet().getRange("H7").setValue("0");
@@ -121,6 +122,12 @@ var temp0 = "=CRYPTOFINANCE(\"";
 var res0 = temp0.concat(tok0.trim());
 res0 = res0.concat("USD\",,$A$1)");
 SpreadsheetApp.getActiveSheet().getRange("H7").setValue(res0);
+
+var temp00 = "=IMPORTHTML(\"https://coinmarketcap.com/currencies/";
+var res00 = temp00.concat(tok00.trim());
+res00 = res00.concat("/historical-data/?start=20130428&end=20201010\", \"table\",1)");
+
+SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok1").getRange("A1").setValue(res00);
 }
 
 
