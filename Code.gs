@@ -132,6 +132,7 @@ SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok1").getRange("A1").setV
 
 
 var tok1 = SpreadsheetApp.getActiveSheet().getRange("B8").getDisplayValue();
+var tok11 = SpreadsheetApp.getActiveSheet().getRange("C8").getDisplayValue();
 if(tok1=="-")
 {
 SpreadsheetApp.getActiveSheet().getRange("H8").setValue("0");
@@ -146,9 +147,16 @@ var temp1 = "=CRYPTOFINANCE(\"";
 var res1 = temp1.concat(tok1.trim());
 res1 = res1.concat("USD\",,$A$1)");
 SpreadsheetApp.getActiveSheet().getRange("H8").setValue(res1);
+
+var temp11 = "=IMPORTHTML(\"https://coinmarketcap.com/currencies/";
+var res11 = temp11.concat(tok11.trim());
+res11 = res11.concat("/historical-data/?start=20130428&end=20201010\", \"table\",1)");
+
+SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok2").getRange("A1").setValue(res11);
 }
 
 var tok2 = SpreadsheetApp.getActiveSheet().getRange("B9").getDisplayValue();
+var tok22 = SpreadsheetApp.getActiveSheet().getRange("C9").getDisplayValue();
 if(tok2=="-")
 {
 SpreadsheetApp.getActiveSheet().getRange("H9").setValue("0");
@@ -164,9 +172,16 @@ var res2 = temp2.concat(tok2.trim());
 res2 = res2.concat("USD\",,$A$1)");
 SpreadsheetApp.getActiveSheet().getRange("H9").setValue(res2);
 
+var temp22 = "=IMPORTHTML(\"https://coinmarketcap.com/currencies/";
+var res22 = temp11.concat(tok22.trim());
+res22 = res22.concat("/historical-data/?start=20130428&end=20201010\", \"table\",1)");
+
+SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok3").getRange("A1").setValue(res22);
+
 }
 
 var tok3 = SpreadsheetApp.getActiveSheet().getRange("B10").getDisplayValue();
+var tok33 = SpreadsheetApp.getActiveSheet().getRange("C10").getDisplayValue();
 if(tok3=="-")
 {
 SpreadsheetApp.getActiveSheet().getRange("H10").setValue("0");
@@ -181,9 +196,16 @@ var temp3 = "=CRYPTOFINANCE(\"";
 var res3 = temp3.concat(tok3.trim());
 res3 = res3.concat("USD\",,$A$1)");
 SpreadsheetApp.getActiveSheet().getRange("H10").setValue(res3);
+
+var temp33 = "=IMPORTHTML(\"https://coinmarketcap.com/currencies/";
+var res33 = temp11.concat(tok33.trim());
+res33 = res33.concat("/historical-data/?start=20130428&end=20201010\", \"table\",1)");
+
+SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok4").getRange("A1").setValue(res33);
 }
 
 var tok4 = SpreadsheetApp.getActiveSheet().getRange("B11").getDisplayValue();
+var tok44 = SpreadsheetApp.getActiveSheet().getRange("C11").getDisplayValue();
 if(tok4=="-")
 {
 SpreadsheetApp.getActiveSheet().getRange("H11").setValue("0");
@@ -198,9 +220,16 @@ var temp4 = "=CRYPTOFINANCE(\"";
 var res4 = temp4.concat(tok4.trim());
 res4 = res4.concat("USD\",,$A$1)");
 SpreadsheetApp.getActiveSheet().getRange("H11").setValue(res4);
+
+var temp44 = "=IMPORTHTML(\"https://coinmarketcap.com/currencies/";
+var res44 = temp11.concat(tok44.trim());
+res44 = res44.concat("/historical-data/?start=20130428&end=20201010\", \"table\",1)");
+
+SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok5").getRange("A1").setValue(res44);
 }
 
 var tok5 = SpreadsheetApp.getActiveSheet().getRange("B12").getDisplayValue();
+var tok55 = SpreadsheetApp.getActiveSheet().getRange("C12").getDisplayValue();
 if(tok5=="-")
 {
 SpreadsheetApp.getActiveSheet().getRange("H12").setValue("0");
@@ -215,9 +244,16 @@ var temp5 = "=CRYPTOFINANCE(\"";
 var res5 = temp5.concat(tok5.trim());
 res5 = res5.concat("USD\",,$A$1)");
 SpreadsheetApp.getActiveSheet().getRange("H12").setValue(res5);
+
+var temp55 = "=IMPORTHTML(\"https://coinmarketcap.com/currencies/";
+var res55 = temp11.concat(tok55.trim());
+res55 = res55.concat("/historical-data/?start=20130428&end=20201010\", \"table\",1)");
+
+SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok6").getRange("A1").setValue(res55);
 }
 
 var tok6 = SpreadsheetApp.getActiveSheet().getRange("B13").getDisplayValue();
+var tok66 = SpreadsheetApp.getActiveSheet().getRange("C13").getDisplayValue();
 if(tok6=="-")
 {
 SpreadsheetApp.getActiveSheet().getRange("H13").setValue("0");
@@ -232,9 +268,16 @@ var temp6 = "=CRYPTOFINANCE(\"";
 var res6 = temp6.concat(tok6.trim());
 res6 = res6.concat("USD\",,$A$1)");
 SpreadsheetApp.getActiveSheet().getRange("H13").setValue(res6);
+
+var temp66 = "=IMPORTHTML(\"https://coinmarketcap.com/currencies/";
+var res66 = temp11.concat(tok66.trim());
+res66 = res66.concat("/historical-data/?start=20130428&end=20201010\", \"table\",1)");
+
+SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok7").getRange("A1").setValue(res66);
 }
 
 var tok7 = SpreadsheetApp.getActiveSheet().getRange("B14").getDisplayValue();
+var tok77 = SpreadsheetApp.getActiveSheet().getRange("C14").getDisplayValue();
 if(tok7=="-")
 {
 SpreadsheetApp.getActiveSheet().getRange("H14").setValue("0");
@@ -249,9 +292,16 @@ var temp7 = "=CRYPTOFINANCE(\"";
 var res7 = temp7.concat(tok7.trim());
 res7 = res7.concat("USD\",,$A$1)");
 SpreadsheetApp.getActiveSheet().getRange("H14").setValue(res7);
+
+var temp77 = "=IMPORTHTML(\"https://coinmarketcap.com/currencies/";
+var res77 = temp11.concat(tok77.trim());
+res77 = res77.concat("/historical-data/?start=20130428&end=20201010\", \"table\",1)");
+
+SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok8").getRange("A1").setValue(res77);
 }
 
 var tok8 = SpreadsheetApp.getActiveSheet().getRange("B15").getDisplayValue();
+var tok88 = SpreadsheetApp.getActiveSheet().getRange("C15").getDisplayValue();
 if(tok8=="-")
 {
 SpreadsheetApp.getActiveSheet().getRange("H15").setValue("0");
@@ -266,9 +316,16 @@ var temp8 = "=CRYPTOFINANCE(\"";
 var res8 = temp8.concat(tok8.trim());
 res8 = res8.concat("USD\",,$A$1)");
 SpreadsheetApp.getActiveSheet().getRange("H15").setValue(res8);
+
+var temp88 = "=IMPORTHTML(\"https://coinmarketcap.com/currencies/";
+var res88 = temp11.concat(tok88.trim());
+res88 = res88.concat("/historical-data/?start=20130428&end=20201010\", \"table\",1)");
+
+SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok9").getRange("A1").setValue(res88);
 }
 
 var tok9 = SpreadsheetApp.getActiveSheet().getRange("B16").getDisplayValue();
+var tok99 = SpreadsheetApp.getActiveSheet().getRange("B16").getDisplayValue();
 if(tok9=="-")
 {
 SpreadsheetApp.getActiveSheet().getRange("H16").setValue("0");
@@ -283,6 +340,12 @@ var temp9 = "=CRYPTOFINANCE(\"";
 var res9 = temp9.concat(tok9.trim());
 res9 = res9.concat("USD\",,$A$1)");
 SpreadsheetApp.getActiveSheet().getRange("H16").setValue(res9);
+
+var temp99 = "=IMPORTHTML(\"https://coinmarketcap.com/currencies/";
+var res99 = temp11.concat(tok88.trim());
+res99 = res99.concat("/historical-data/?start=20130428&end=20201010\", \"table\",1)");
+
+SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tok10").getRange("A1").setValue(res99);
 }
 
 }
